@@ -1,5 +1,7 @@
 Este projeto foi baseado em PDVs de compras<br/>
 
+**O projeto está em andamento.<br/>
+
 Abaixo temos como iniciar o projeto e suas principais rotas<br/>
 
 # Projeto
