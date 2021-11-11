@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #776396;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 50vh;
+
+  }
+}
+/*Navbar*/
+.navbar-expand-lg .navbar-collapse {
+
+  justify-content: center;
+}
+.navbar-expand-lg {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: 69px;
+}
+
+
+/*Formulário*/
+.form-label {
+  margin-bottom: 0px !important;
+}
+.form-label, .btn {
+  float: left !important;
+}
+
+.form-control, .form-select {
+  display: block;
+  width: 100%;
+  padding: 0.1rem 0.75rem !important;
+}
+
+.table {
+  
+}
+.right {
+  float: right !important;
+  display: flex;
+  justify-content: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.hide1, .hide2., .hide2 {
+  display: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+p {
+  font-size: 1.4rem;
+}
+
+label {
+  font-size: .8rem;
+}
+
+
+/*Tabelas*/
+
+.table-modify {
+  width: 75% !important;
+}
+
+.table>:not(caption)>*>* {
+  padding: .1rem .1rem !important;
+}
+
+td {
+  background: white !important;
+  color: black !important;
+}
+
+
+
+/*Cards*/
+
+.card-body {
+  padding: 0rem 1rem !important;
+}
+
+/*Botões*/
+.btn {
+  padding: 0.2rem 0.75rem !important;
+}
+.centralizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-success {
+  color: #fff !important;
+  background-color: #776396 !important;
+  border-color: aliceblue !important;
+  border-width: 1.90px !important ;
+}
+.btn-success:hover {
+  color: #fff !important;
+  background-color: #198754 !important;
+}
+
