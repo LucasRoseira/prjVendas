@@ -4,7 +4,6 @@ Abaixo temos como iniciar o projeto e suas principais rotas<br/>
 
 # Projeto
 
-Versão online da aplicação esta disponivel em: [https://lesbackend.herokuapp.com/](https://lesbackend.herokuapp.com/)<br/>
 
 ### `npm install`
 
