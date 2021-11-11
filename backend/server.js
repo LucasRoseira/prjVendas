@@ -58,19 +58,10 @@ module.exports = app => {
  router.get("/", vendas.findAll);
 
   // Retrieve all published vendas
- router.get("/published", vendas.findAllPublished);
+ router.get("/published", vendas.findAllApproved);
 
   // Retrieve a single Vendas with id
  router.get("/:id", vendas.findOne);
-
-  // Update a Vendas with id
- router.put("/:id", vendas.update);
-
-  // Delete a Vendas with id
- router.delete("/:id", vendas.delete);
-
-  // Delete all vendas
- router.delete("/", vendas.deleteAll);
 
  app.use('/api/vendas', router);
 
@@ -82,8 +73,6 @@ module.exports = app => {
   // Retrieve all produtos
  router.get("/", produtos.findAll);
 
-  // Retrieve all published produtos
- router.get("/published", produtos.findAllPublished);
 
   // Retrieve a single Produto with id
  router.get("/:id", produtos.findOne);

@@ -10,7 +10,7 @@ module.exports = app => {
   router.get("/", clientes.findAll);
 
   // Retrieve all actived clients
-  router.get("/published", clientes.findAllPublished);
+  router.get("/actived", clientes.findAllPublished);
 
   // Retrieve a single client with id
   router.get("/:id", clientes.findOne);

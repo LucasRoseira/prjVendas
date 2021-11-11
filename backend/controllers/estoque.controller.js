@@ -44,13 +44,13 @@ exports.findOne = (req, res) => {
       res.send(data);
     } else {
       res.status(404).send({
-        message: `Não foi possível encontrar a estoque com o codigo =${cod_estoque}.`
+        message: `Não foi possível encontrar o estoque de codigo =${cod_estoque}.`
       });
     }
   })
   .catch(err => {
     res.status(500).send({
-      message: "Erro ao retonar a estoque com o codigo =" + cod_estoque
+      message: "Erro ao retonar a estoque de codigo =" + cod_estoque
     });
   });
 };

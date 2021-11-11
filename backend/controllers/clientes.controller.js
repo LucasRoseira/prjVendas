@@ -6,7 +6,7 @@ exports.create = (req, res) => {
 
   if (!req.body.cod_cliente) {
     res.status(400).send({
-      message: "Content can not be empty!"
+      message: "O conteudo não pode estar vazio!"
     });
     return;
   }

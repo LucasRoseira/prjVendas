@@ -33,7 +33,7 @@ exports.create = (req, res) => {
   .catch(err => {
     res.status(500).send({
       message:
-      err.message || "Algum erro ocorreu ao criar o produto status 500."
+      err.message || "Algum erro ocorreu ao criar o produto."
     });
   });
 };
@@ -110,7 +110,7 @@ exports.delete = (req, res) => {
   .then(num => {
     if (num == 1) {
       res.send({
-        message: "O produto foi deltado com sucesso!"
+        message: "O produto foi deletado com sucesso!"
       });
     } else {
       res.send({
@@ -142,16 +142,3 @@ exports.deleteAll = (req, res) => {
   });
 };
 
-
-exports.findAllPublished = (req, res) => {
-  Produto.findAll({ where: { published: true } })
-  .then(data => {
-    res.send(data);
-  })
-  .catch(err => {
-    res.status(500).send({
-      message:
-      err.message || "Some error occurred while retrieving tutorials."
-    });
-  });
-};
